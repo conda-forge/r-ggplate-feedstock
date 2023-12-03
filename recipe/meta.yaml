@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggplate_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggplate/ggplate_{{ version }}.tar.gz
-  sha256: a10aa17aa5002c1890838a811ecf68b195c5ab49fca806c736b6cb2c356e3b45
+  sha256: 218c6f2843ffc209d7ed6bbdff73af6d6ed1efaf340e762132a3c4708c03cca8
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -55,8 +55,7 @@ test:
 about:
   home: https://github.com/jpquast/ggplate, https://jpquast.github.io/ggplate/
   license: MIT
-  summary: Enables users to create simple plots of biological culture plates as well as microplates.
-    Both continuous and discrete values can be plotted onto the plate layout.
+  summary: Enables users to create simple plots of biological culture plates as well as microplates. Both continuous and discrete values can be plotted onto the plate layout.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
