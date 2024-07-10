@@ -1,4 +1,4 @@
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggplate_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggplate/ggplate_{{ version }}.tar.gz
-  sha256: e21c74fee85e72609251dd9bbd8a82d50c6bd330ce09feba82daffd57f8c2ba2
+  sha256: 837cfd4fa342744aeb6ad2647ca47f6243748560ac0f12e72b76179acd4b4c58
 
 build:
   merge_build_host: true  # [win]
